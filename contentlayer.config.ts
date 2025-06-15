@@ -109,6 +109,7 @@ export const Blog = defineDocumentType(() => ({
     layout: { type: 'string' },
     bibliography: { type: 'string' },
     canonicalUrl: { type: 'string' },
+    thumbnail: { type: 'string', required: false }, // ✅ 추가
   },
   computedFields: {
     ...computedFields,
